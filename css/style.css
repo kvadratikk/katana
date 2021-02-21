@@ -933,6 +933,11 @@ body {
     top: 22%;
   }
 }
+@media (max-width: 412px) {
+  .header__back2 {
+    width: 205.5px;
+  }
+}
 
 .menu {
   margin-top: 120px;
@@ -1586,8 +1591,9 @@ body {
     content: url("../img/bi_chevron-left2.png");
   }
   .discount__img {
-    justify-content: flex-start;
+    justify-content: center;
     width: 137px;
+    overflow: hidden;
   }
   .discount__img img {
     width: 173px;
@@ -2153,6 +2159,7 @@ body {
   .delivery__elements {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .delivery__map {
     display: none;
@@ -2170,7 +2177,6 @@ body {
     order: 1;
     max-width: 1080px;
     width: 1080px;
-    margin: 0 auto;
   }
   .delivery__row {
     display: flex;
@@ -2189,6 +2195,9 @@ body {
   }
 }
 @media (max-width: 1100px) {
+  .delivery__elements {
+    overflow: hidden;
+  }
   .delivery__form {
     max-width: 343px;
     width: 343px;
